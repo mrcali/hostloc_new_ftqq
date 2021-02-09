@@ -1,0 +1,6 @@
+{
+    "require": {
+        "yurunsoft/yurun-http": "^4.3",
+        "jaeger/querylist": "^4.2"
+    }
+}
