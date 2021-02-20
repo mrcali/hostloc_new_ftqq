@@ -2,7 +2,7 @@
 /**
  * @author 小哲
  * @link https://www.locpp.com
- * @date 2021年2月9日10:43:01
+ * @date 2021年2月20日09:36:43
  * @msg LOC新帖通知Server酱版
  */
 require 'vendor/autoload.php';
@@ -47,6 +47,7 @@ $file = fopen("hostloc.txt","r");
 $filedata=fread($file,filesize("hostloc.txt"));
 fclose($file);
 if($filedata==$data['id']){exit('error');}
+if(!$data['text']){exit('error');}
 
 /**
  * 通知并写入文件
